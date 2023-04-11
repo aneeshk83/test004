@@ -5,7 +5,7 @@ on:
   
 jobs:
   test_pull_request:
-    if: startsWith(github.head_ref, 'devops/**') !=true
+    if: startsWith(github.head_ref, devops/**) !=true
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World"
