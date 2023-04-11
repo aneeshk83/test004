@@ -5,7 +5,7 @@ on:
     branches-ignore:
       - 'devops/**'
       - 'doc/**'
-      - 'aneesh/'
+      - 'aneesh'
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
