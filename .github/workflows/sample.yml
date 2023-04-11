@@ -1,13 +1,11 @@
 name: GitHub Actions Demo 01
 
 on: 
-  pull_request:
-    branches-ignore:
-      - 'devops/**'
-      - 'doc/**'
-      - 'aneesh'
+  pull_request
+  
 jobs:
   test_pull_request:
+    if: startsWith(github.head_ref, 'devops/**') !=true
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World"
