@@ -1,0 +1,12 @@
+name: GitHub Actions Demo 01
+
+on: 
+  pull_request:
+    branches-ignore:
+      - 'devops/**'
+      - 'doc/**'
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World"
