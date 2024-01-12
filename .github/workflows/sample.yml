@@ -2,6 +2,10 @@ name: WF 01
 
 on: 
   push
+
+concurrency:
+  group: aneesh-test
+  cancel-in-progress: false
   
 jobs:
   test_job:
