@@ -1,4 +1,4 @@
-name: GitHub Actions Demo 01
+name: WF 01
 
 on: 
   push
@@ -7,4 +7,4 @@ jobs:
   test_job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World"
+      - run: sleep 300 && echo "Hello World" 
